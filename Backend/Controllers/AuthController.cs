@@ -3,6 +3,7 @@ using Backend.DTOs;
 using Backend.Models;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using System.Text;
 
@@ -82,6 +83,19 @@ namespace Backend.Controllers
                 signingCredentials: credentials);
 
             return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        [Authorize]
+        [HttpGet("profile")]
+        public IActionResult GetProfile()
+        {
+            var username = User.FindFirst(ClaimTypes.Name)?.Value;
+
+            return Ok(new
+            {
+                Username = username,
+                Message = "Welcome to the secured page!"
+            });
         }
     }
 }
