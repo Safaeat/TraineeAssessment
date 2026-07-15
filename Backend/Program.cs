@@ -75,8 +75,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddAuthorization();
 
-builder.Services.AddHttpClient();
-builder.Services.AddScoped<ICurrencyService, CurrencyService>();
+builder.Services.AddHttpClient<ICurrencyService, CurrencyService>();
 
 var app = builder.Build();
 
