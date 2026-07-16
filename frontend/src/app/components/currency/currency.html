@@ -1,0 +1,86 @@
+<div class="card">
+
+  <div class="card-header bg-success text-white">
+
+    Currency Converter
+
+  </div>
+
+  <div class="card-body">
+
+    <div class="mb-3">
+
+      <label>From Currency</label>
+
+      <select class="form-select" [(ngModel)]="fromCurrency">
+
+        <option *ngFor="let c of currencies" [value]="c">
+
+          {{c}}
+
+        </option>
+
+      </select>
+
+    </div>
+
+    <div class="mb-3">
+
+      <label>To Currency</label>
+
+      <select class="form-select" [(ngModel)]="toCurrency">
+
+        <option *ngFor="let c of currencies" [value]="c">
+
+          {{c}}
+
+        </option>
+
+      </select>
+
+    </div>
+
+    <div class="mb-3">
+
+      <label>Amount</label>
+
+      <input type="number"
+             class="form-control"
+             [(ngModel)]="amount">
+
+    </div>
+
+    <button class="btn btn-primary w-100"
+            (click)="convert()">
+
+      Convert
+
+    </button>
+
+    <hr>
+
+    <h5>Converted Amount</h5>
+
+    <h3 class="text-success">
+
+      {{convertedAmount}}
+
+    </h3>
+
+    <p>
+
+      Exchange Rate:
+      <strong>{{exchangeRate}}</strong>
+
+    </p>
+
+    <div class="alert alert-info"
+         *ngIf="message">
+
+      {{message}}
+
+    </div>
+
+  </div>
+
+</div>
