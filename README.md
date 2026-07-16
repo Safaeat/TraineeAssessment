@@ -334,7 +334,7 @@ export const environment = {
 
 ## 1. Public Page
 
-> *(Insert Screenshot Here)*
+> <img src="p1.png" alt="Image 1" width="550"/>
 
 ---
 
