@@ -334,7 +334,7 @@ export const environment = {
 
 ## 1. Public Page
 
-> <img src="p1.png" alt="Image 1" width="550"/>
+> <img src="public_page.png" alt="Image 1" width="550"/>
 
 ---
 
