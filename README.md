@@ -344,31 +344,25 @@ export const environment = {
 
 ---
 
-## 3. Successful Login Page
+## 3. Secure Page
 
 > <img src="Successfull_login.png" alt="Image 1" width="550"/>
 
 ---
 
-## 4. Secure Page
-
-> <img src="public_page.png" alt="Image 1" width="550"/>
-
----
-
-## 5. Currency Converter
+## 4. Currency Converter
 
 > <img src="convert_page.png" alt="Image 1" width="550"/>
 
 ---
 
-## 6. Successful Currency Conversion
+## 5. Successful Currency Conversion
 
 > <img src="successful_conversion.png" alt="Image 1" width="550"/>
 
 ---
 
-## 7. Swagger API Testing
+## 6. Swagger API Testing
 
 > <img src="backend.png" alt="Image 1" width="550"/>
 
